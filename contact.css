@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+  
+body{
+    background: rgb(34,193,195);
+}
+.contact {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+    text-align: center;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20%;
+    right: 15%;
+    position: absolute;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    padding: 20px;
+    color: #333;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #06294d;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+ul li:nth-child(4){
+    font-size: 50px;
+}
+
+
+ul li{
+    margin:10px;
+    height:70px;
+    width:70px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    cursor:pointer;
+    position:relative;
+    
+}
+.content-center{
+    padding: 0 5%;
+}
+
+ul li i{
+    transition:all 0.3s linear;
+}
+
+
+ul li:hover i{
+    color:#2d4e71;
+    font-size:17px;
+}
+
+ul li:hover::after{
+    opacity:1;
+    transform:scale(0.8);
+   
+}
+
+ul li::after{
+    content:"";
+    position:absolute;
+    height:inherit;
+    width:inherit;
+    border-radius:50%;
+    opacity:0;
+    z-index:-1;
+    transition:all 0.3s linear;
+    
+}
+
+ul li:nth-child(1){
+    
+    border:2px solid #3b5998;
+    color:#3b5998;
+}
+
+ul li:nth-child(1)::after{
+    
+    background-color:#3b5998;
+     color:#3b5998;
+}
+
+
+ul li:nth-child(2){
+    
+    border:2px solid #00aced;
+    color:#00aced;
+}
+
+ul li:nth-child(2)::after{
+    
+    background-color:#00aced;
+     color:#00aced;
+}
+
+
+ul li:nth-child(3){
+    
+    border:2px solid #007bb6;
+    color:#007bb6;
+}
+
+ul li:nth-child(3)::after{
+    
+    background-color:#007bb6;
+     color:#007bb6;
+}
+
+
+
+ul li:nth-child(4){
+    border:2px solid #007bb6;
+    color:#007bb6;
+}
+
+ul li:nth-child(4)::after{
+    
+    background-color:#007bb6;
+     color:#007bb6;
+}
+header{
+    height: 20px;
+    width: 100%;
+    display: flex;
+    background-color: rgb(0, 0, 0,.1);
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    padding: 2rem 0%;
+    position: fixed;
+    top:0;
+    left:0;
+    gap: 35em;
+    font-family:'Pacifico', cursive ;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+ .logo{
+    display: flex;
+}
+header::before{
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgb(0, 0, 0,.1);
+     z-index: -1;
+ }
+ #open{
+     display: none;
+ }
+
+ nav a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 1rem;
+    /* margin-right: 80px; */
+    }
+ 
+ nav a:hover{
+     background: #ece7e77f;
+     transition: .2s;
+     text-align: center;
+ }
+ .icone{
+     position: absolute;
+     color:#fff;
+     font-weight: 400;
+     font-size: 2.5rem;
+     cursor: pointer;
+     display: none;
+     right: 30%;
+ }
+ @media (max-width: 992px){
+   nav{
+       padding: 1.3rem 5%
+   }
+}
+@media (max-width: 820px){
+   .icone{
+       display: inline-flex;
+       margin-bottom: 1rem;
+   }
+   .navbar{
+       position: absolute;
+       width: 100%;
+       background: rgb(0, 0, 0,.1);
+       top: 0;
+       left: 0;
+       height: 17rem;
+       display: none;
+   }
+
+ .navbar a{
+   display: block;
+   text-align: center;
+   font-size: 1.1rem;
+   margin: 3rem 1.5rem;
+ }
+ ul {
+     display: block
+ }
+}
+ /* end section navbar */
